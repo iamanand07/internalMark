@@ -1,11 +1,15 @@
 body{
-    background-color: #E2C2B3;
+    background-color:#01579B;
+}
+*{
+  margin:0%;
+  padding: 0%;
 }
 .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:whitesmoke;
+    background-color:#F5F5F5;
     margin-top: 0%;
     border-radius: 0%;
     padding:5px;
@@ -18,18 +22,20 @@ body{
     flex: 2;
     justify-content: end;
     list-style-type: none;
+    margin-right: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .nav-items li {
     flex-direction: row;
-    margin: 0 20px 0 20px;
+    margin: 0 30px 0 30px;
   }
 
   .nav-items a {
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
-    color:#687477;
+    color:#01579B;
     font-weight: bolder;
   }
 
@@ -51,26 +57,31 @@ body{
     
     position: absolute;
     right: 0;
-    margin: 20px;
+    margin-top: 67px;
+    margin-right: 330px;
     max-width: 300px;
-    padding: 16px;
-    background-color:#CCD9E2;
+    padding: 30px;
+    background-color:#F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
   }
 
   /* Full-width input fields */
-  input[type="text"],
-  input[type="password"] {
+  input[type="date"],
+  input[type="date"] {
     width: 100%;
     padding: 15px;
+    border-radius: 20px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #f1f1f1;
+    background: #C7D0D5;
   }
 
   input[type="text"]:focus,
   input[type="password"]:focus {
     background-color:#687477;
     outline: none;
+    border-radius: 20px;
   }
 
   /* Set a style for the submit button */
@@ -94,10 +105,13 @@ body{
     
     position: absolute;
     left: 0;
-    margin: 20px;
+    margin-top: 50px;
+    margin-left: 280px;
     max-width: 300px;
-    padding: 16px;
-    background-color:#CCD9E2;
+    padding: 30px;
+    background-color:#F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
   } 
    /* Full-width input fields */
   input[type="text"],
@@ -106,28 +120,39 @@ body{
     padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
-    background: #f1f1f1;
+    background: #C7D0D5;
+    border-radius: 20px;
   }
 
   input[type="text"]:focus,
   input[type="password"]:focus {
     background-color:#687477;
     outline: none;
+    border-radius: 20px;
   }
 
   /* Set a style for the submit button */
   .btn {
     font-weight: bold;
     font-size: larger;
-    background-color: #E2C2B3 ;
-    color:#403234;
+    background-color: #01579B;
+    border-radius: 50px;
+    color: #F5F5F5;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 80%;
     opacity: 0.9;
+    margin-left: 25px;
   }
 
   .btn:hover {
     opacity: 1;
+  }
+
+  h1{
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+
   }
