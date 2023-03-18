@@ -1,0 +1,30 @@
+body{
+    background: #0a0a23;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+  }
+  
+  select{
+    border:none;
+    padding: 10px 20px;
+    border-radius:5px;
+  }
+  
+  select:focus{
+    outline:none;
+  }
+  .btn {
+    font-weight: bold;
+    font-size: larger;
+    background-color: #01579B;
+    border-radius: 50px;
+    color: #F5F5F5;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    margin-left: 25px;
+  }
