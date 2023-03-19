@@ -159,7 +159,8 @@ html,body,h1,h2,h3,h4,h5,h6{
 		height:35px;
 		margin-left: 1%;
 		background-color:skyblue;
-		color:white;
+		color:black;
+		font-weight: bold;
 	}
 
 	.calc-size {
