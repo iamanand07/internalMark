@@ -22,11 +22,11 @@
 
         }
         body{
-            background-image: url(2.jpg), linear-gradient(rgb(8, 8, 59), rgb(43, 12, 12));
-            background-repeat: no-repeat;
+            background-image: url(2.jpg),url(dark1.jpg);
+            background-blend-mode: darken;
+            background-repeat: no-repeat,repeat;
             background-attachment: fixed;
             background-size: cover;
-            
             margin: 0%;
         }
        
@@ -42,14 +42,18 @@
         }
 
         .content1{
-            max-width: 50%;
+            max-width: 60%;
             padding: 5px 20px ;
             background: transparent;
             backdrop-filter: blur 50px;
+            color: white;
+            
         }
 
         .courses{
-            max-width: 50%;
+            max-width: 40%;
+            display: flex;
+            flex-direction: column;
         }
         
         .btn1 {
@@ -67,22 +71,122 @@
             margin-top: 30px;
             
         }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color:rgb(135, 171, 238);
+            margin-top: 0%;
+            border-radius: 0%;
+            padding:5px;
+            height: 100px;
+            width :100%;
+        }
+
+        .nav-items1 {
+            display: flex;
+            flex: 2;
+            justify-content: end;
+            list-style-type: none;
+            margin-right: 30px;
+            
+        }
+
+        .nav-items1 li {
+            flex-direction: row;
+            margin: 0 30px 0 30px;
+            
+        }
+
+        .nav-items1 a {
+            max-height: 5px;
+            max-width: 5px;
+        }
+        .home-img{
+            max-width: 60px;
+            max-height: 60px;
+            border-radius: 200px;
+        }
+        h2{
+            color: black;
+            background-color: white ;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+        }
+        .mech-img
+        {
+            max-height: 250px;
+            max-width: 700px;
+            margin-top: 0px;
+        }
+        .cse-img
+        {
+            max-height: 250px;
+            max-width: 500px;
+            margin-top: 0px;
+        }
+        .ece-img
+        {
+            max-height: 250px;
+            max-width: 500px;
+            margin-top: 0px;
+        }
+        .geo-img
+        {
+            max-height: 250px;
+            max-width: 500px;
+            margin-top: 0px;
+        }
+
+
+        
+
+        
+        
+
         
        
     </style>
 </head>
 <body>
-    <div>
-        <h1> Anna University Regional Campus - Tirunelveli</h1>
-        <marquee>Counselling starts from July 2023 Onwards || Anna University President talked about Students future in the mega book event that took place in Gindy || AURC-TVL plans to host a cultural event on March 29 and 30 ||</marquee>
-    </div>
+    <div class="header">
+        <a href="https://auttvl.ac.in/" aria-label="Logo" class="header-main__logo">
+            <img class="logo_img" src="anna.png" alt="anna university">
+        
+        <ul class="nav-items1">
+          
+          <li><a href="index.html" aria-label="home" class="home-logo">
+            <img class="home-img" src="home1.jpg" alt="home">
+          </li>
+        </ul>
+        
+      </div>
+      <marquee>Counselling starts from July 2023 Onwards || Anna University President talked about Students future in the mega book event that took place in Gindy || AURC-TVL plans to host a cultural event on March 29 and 30 ||</marquee>
+    
+    
+        
     <div class="content">
         <div class="content1">
             <p>Anna University, one of the excellent institutions of the southern part of India has its acquisitions to many institutions in Tamilnadu and one primary institution is the Anna University Regional Campus – Tirunelveli which extends high quality teaching ensuring contiguous progress of the young minds. Our campus has grown into an institution that provides excellent technical education in the field of Engineering and Management, within a short period. It offers excellent platform for the students to show off their talents and equip the students with confidence and high image profile to compete with the fast paced ambitious world.</p>
             <button type="button" class="btn1">Know More</button>
         </div>
     <div class="courses">
-
+            <h2> Courses </h2>
+            <ul class="course-img">
+                <li><a href="" aria-label="mech" class="mech-logo">
+                    <img class="mech-img" src="mech.jpg" alt="mech">
+                  </li>
+                <li><a href="" aria-label="cse" class="cse-logo">
+                    <img class="cse-img" src="cse.jpg" alt="cse">
+                  </li>
+                <li><a href="" aria-label="ece" class="ece-logo">
+                    <img class="ece-img" src="ece.jpg" alt="ece">
+                  </li>
+                <li><a href="" aria-label="geo" class="geo-logo">
+                    <img class="geo-img" src="geo.jpg" alt="geo">
+                  </li> 
+            </ul>
     </div>
      </div>   
 </body>
