@@ -1,5 +1,11 @@
 body{
     background-color: #E2C2B3;
+    
+}
+*{
+  padding: 0%;
+  margin: 0%;
+  
 }
 .header {
     display: flex;
@@ -130,4 +136,16 @@ body{
 
   .btn:hover {
     opacity: 1;
+  }
+  .footer{
+    display: flexbox;
+    align-items: center;
+    justify-content: space-between;
+    background-color:whitesmoke;
+    margin-bottom: 0%;
+    border-radius: 0%;
+    padding:5px;
+    height: 100px;
+    width :100%;
+  
   }
