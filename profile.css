@@ -1,11 +1,16 @@
-body{
-    background: #0a0a23;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#fff;
-  }
+  body{
+      background: linear-gradient(to right, orange,rgb(243, 79, 107),red);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:#fff;
+    }
+
+    .form{
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+    }
   
   select{
     border:none;
@@ -16,15 +21,24 @@ body{
   select:focus{
     outline:none;
   }
+
   .btn {
     font-weight: bold;
     font-size: larger;
     background-color: #01579B;
-    border-radius: 50px;
+    border-radius: 25px;
     color: #F5F5F5;
-    padding: 16px 20px;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
     opacity: 0.9;
-    margin-left: 25px;
+    margin-left: 150px;
   }
+   fieldset{
+    background-color: grey;
+    background: transparent;
+    padding: 25px 40px;
+    padding-right: 150px;
+    backdrop-filter: blur 100px;
+    border: 3px Solid black;
+   }
