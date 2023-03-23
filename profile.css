@@ -1,5 +1,5 @@
   body{
-      background: linear-gradient(to right, orange,rgb(243, 79, 107),red);
+      background: linear-gradient(to right, lightgreen,skyblue);
       min-height:100vh;
       display:flex;
       justify-content:center;
