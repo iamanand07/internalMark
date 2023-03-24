@@ -18,10 +18,12 @@ body{
     height: 100px;
     width :100%;
     background-color: whitesmoke;
+    border-bottom: 2px solid rgb(3, 12, 90);
+
     
   }
   .pic{
-    margin-left: 75px;
+    margin-left: 50px;
     align-items: flex-start;
     
   }
@@ -38,8 +40,11 @@ body{
 .material-symbols-outlined{
     margin-left: 40px;
     transform: scale(2);
+    color: rgb(3, 12, 90);
+
 }
 
 .a{
     margin-left: 0px;
 }
+
