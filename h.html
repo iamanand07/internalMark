@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="h.css"
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="annalogo.png" alt="anna">
+                <p> AURC-TVL</p>
+            </div>
+            <ul>
+                <li><a href="#" class="active">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">Home</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-user"></i></span>
+                    <span class="item">Login</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-user-friends"></i></span>
+                    <span class="item">Register</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-calculator"></i></span>
+                    <span class="item">Calculator</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-book"></i></span>
+                    <span class="item">About Us</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">Courses</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-phone"></i></span>
+                    <span class="item">Contact Us</span>
+                </a></li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="https://auttvl.ac.in/" aria-label="Logo" class="header-main__logo">
+                        <img class="logo_img" src="anna.png" alt="anna university">
+                </div>
+            </div>
+            
+            <div class="content">
+                <div class="content1">
+                    <p>Anna University, one of the excellent institutions of the southern part of India has its acquisitions to many institutions in Tamilnadu and one primary institution is the Anna University Regional Campus – Tirunelveli which extends high quality teaching ensuring contiguous progress of the young minds. Our campus has grown into an institution that provides excellent technical education in the field of Engineering and Management, within a short period. It offers excellent platform for the students to show off their talents and equip the students with confidence and high image profile to compete with the fast paced ambitious world.</p>
+                    <button type="button" class="btn1">Know More</button>
+                </div>
+                <div class="content2">
+                    
+                    <h3> Announcements </h3>
+                    <span class="icon"><i class="fas fa-bell"></i></span>
+                    
+                </div>
+            </div>
+    </div>
+
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    </script>
+</body>
+</html>
