@@ -11,7 +11,7 @@
 }
 
 body{
-   background:#FFEEE4;
+   background:#ced1da;
 }
 
 .wrapper .sidebar{
@@ -85,7 +85,7 @@ body{
 }
 
 .wrapper .section .top_navbar{
-    background: #FFEEE4;
+    background: #ced1da;
     height: 100px;
     display: flex;
     align-items: center;
@@ -115,6 +115,8 @@ body.active .wrapper .section{
 .wrapper .section .top_navbar .logo{
     padding: 5px 20px;
 }
+
+/*
 
 .content{
     display: flex;
@@ -187,11 +189,15 @@ body.active .wrapper .section{
     padding: 5px 5px;
    }
 
+*/
 
-
-.wrapper .sidebar ul ul{
+.wrapper .sidebar ul .sub-menu1{
     position: static;
     display: none;
+}
+.wrapper .sidebar ul .sub-menu2{
+    position: static;
+    
 }
 
 .wrapper .sidebar ul ul li{
@@ -259,5 +265,111 @@ body.active .wrapper .section{
 /* end*/
 
 
-/*login css*/
 
+  
+  /*LOGIN PAGE CSS*/
+  .container {
+    
+    position: absolute;
+    right: 0;
+    margin-top: 67px;
+    margin-right: 500px;
+    max-width: 300px;
+    padding: 30px;
+    background-color:#F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    margin-top: 150px;
+  }
+  
+  /* Full-width input fields */
+  input[type="date"],
+  input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #C7D0D5;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    background-color:#687477;
+    outline: none;
+    border-radius: 20px;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    font-weight: bold;
+    font-size: larger;
+    background-color: #E2C2B3 ;
+    color:#403234;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  /*FACULTY LOGIN PAGE*/
+  .container1 {
+    
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+    margin-left: 280px;
+    max-width: 300px;
+    padding: 30px;
+    background-color:#F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+  } 
+   /* Full-width input fields */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #C7D0D5;
+    border-radius: 20px;
+  }
+  
+  input[type="text"]:focus,
+  input[type="password"]:focus {
+    background-color:#687477;
+    outline: none;
+    border-radius: 20px;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    font-weight: bold;
+    font-size: larger;
+    background-color: #01579B;
+    border-radius: 50px;
+    color: #F5F5F5;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    opacity: 0.9;
+    margin-left: 30px;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  h1{
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+  
+  }
+  

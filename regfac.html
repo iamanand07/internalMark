@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="regfac.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="annalogo.png" alt="anna">
+                <p> AURC-TVL</p>
+            </div>
+            <ul>
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-home"></i></span>
+                    <span class="item">Home</span>
+                </a></li>
+             
+                
+                <li><a href="#" class="login-btn" >
+                    <span class="icon"><i class="fas fa-user"></i></span>
+                    <span class="item">Login</span>
+                    <span class="arr1"><i class="fas fa-caret-down first"></i></span>
+                    </a>
+                    <ul class="sub-menu1">
+                        <li><a href="#">Admin</a></li>
+                        <li><a href="#">Student</a></li>
+                        <li><a href="#">Faculty</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="#" class="reg-btn">
+                    <span class="icon1"><i class='bx bxs-user-plus'></i></span>
+                    <span class="item">Register</span>
+                    <span class="arr2"><i class="fas fa-caret-down second"></i></span>
+                </a>
+                    <ul class="sub-menu2">
+                        <li><a href="#">Student</a></li>
+                        <li><a href="#" class="active">Faculty</a></li>
+                    </ul>
+                </li>
+
+                
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-book"></i></span>
+                    <span class="item">About Us</span>
+                </a></li>
+                
+                
+                <li><a href="#">
+                    <span class="icon1"><i class='bx bxs-graduation'></i></span>
+                    <span class="item">Courses</span>
+                </a></li>
+                
+                <li><a href="#">
+                    <span class="icon"><i class="fas fa-phone"></i></span>
+                    <span class="item">Contact Us</span>
+                </a></li>
+                
+            </ul>
+        </div>
+
+        <div class="login">
+        <form action="profile.html" class="container">
+            <h1>Faculty Login</h1>
+        
+            <label for="id"><b>Staff ID</b></label>
+            <input type="text" placeholder="Enter Staff ID" name="id" required>
+        
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+        
+            <button type="submit" class="btn">Login</button>
+          </form>
+        </div>
+        <script>
+            $('.login-btn').click(function(){
+                $('.sidebar ul li .sub-menu1').toggleClass("show");
+                $('.sidebar ul li .arr1').toggleClass("rotate");
+            });
+
+            $('.reg-btn').click(function(){
+                $('.sidebar ul li .sub-menu2').toggleClass("show");
+                $('.sidebar ul li .arr2').toggleClass("rotate");
+            });
+        </script>
+
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="https://auttvl.ac.in/" aria-label="Logo" class="header-main__logo">
+                        <img class="logo_img" src="anna.png" alt="anna university">
+                </div>
+            </div>
+
+            
+            <script>
+                var hamburger = document.querySelector(".hamburger");
+                hamburger.addEventListener("click", function(){
+                document.querySelector("body").classList.toggle("active");
+            })
+            </script>
+        </body>
+        </html>
