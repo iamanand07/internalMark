@@ -8,6 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="h.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -17,59 +19,67 @@
                 <p> AURC-TVL</p>
             </div>
             <ul>
-                <div>
                 <li><a href="#" class="active">
                     <span class="icon"><i class="fas fa-home"></i></span>
                     <span class="item">Home</span>
                 </a></li>
-                </div>
-                <div class="login">
-                <li><a href="#">
+             
+                
+                <li><a href="#" class="login-btn">
                     <span class="icon"><i class="fas fa-user"></i></span>
                     <span class="item">Login</span>
-                    <span class="icon1"><i class='bx bxs-chevron-down'></i></span>
-                    </a></li>
-                </div>
-                <div class="sub1">
-                    <ul class="sub-menu">
+                    <span class="arr1"><i class="fas fa-caret-down first"></i></span>
+                    </a>
+                    <ul class="sub-menu1">
                         <li><a href="#">Admin</a></li>
                         <li><a href="#">Student</a></li>
                         <li><a href="#">Faculty</a></li>
                     </ul>
-                </div>
-                <div class="register">
-                <li><a href="#">
-                    <span class="icon"><i class='bx bxs-user-plus'></i></span>
+                </li>
+                
+                <li><a href="#" class="reg-btn">
+                    <span class="icon1"><i class='bx bxs-user-plus'></i></span>
                     <span class="item">Register</span>
-                    <span class="icon1"><i class='bx bxs-chevron-down'></i></span>
-                </a></li>
-                </div>
-                <div class="sub1">
-                    <ul class="sub-menu">
+                    <span class="arr2"><i class="fas fa-caret-down second"></i></span>
+                </a>
+                    <ul class="sub-menu2">
                         <li><a href="#">Student</a></li>
                         <li><a href="#">Faculty</a></li>
                     </ul>
-                </div>
-                <div>
+                </li>
+
+                
                 <li><a href="#">
                     <span class="icon"><i class="fas fa-book"></i></span>
                     <span class="item">About Us</span>
                 </a></li>
-                </div>
-                <div class="courses">
+                
+                
                 <li><a href="#">
-                    <span class="icon"><i class='bx bxs-graduation'></i></span>
+                    <span class="icon1"><i class='bx bxs-graduation'></i></span>
                     <span class="item">Courses</span>
                 </a></li>
-                </div>
-                <div>
+                
                 <li><a href="#">
                     <span class="icon"><i class="fas fa-phone"></i></span>
                     <span class="item">Contact Us</span>
                 </a></li>
-                </div>
+                
             </ul>
         </div>
+
+        <script>
+            $('.login-btn').click(function(){
+                $('.sidebar ul li .sub-menu1').toggleClass("show");
+                $('.sidebar ul li .arr1').toggleClass("rotate");
+            });
+
+            $('.reg-btn').click(function(){
+                $('.sidebar ul li .sub-menu2').toggleClass("show");
+                $('.sidebar ul li .arr2').toggleClass("rotate");
+            });
+        </script>
+
         <div class="section">
             <div class="top_navbar">
                 <div class="hamburger">
