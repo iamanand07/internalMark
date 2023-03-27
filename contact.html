@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="h.css">
+    <link rel="stylesheet" href="contact.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -19,7 +19,7 @@
                 <p> AURC-TVL</p>
             </div>
             <ul>
-                <li><a href="#" class="active">
+                <li><a href="h.html">
                     <span class="icon"><i class="fas fa-home"></i></span>
                     <span class="item">Home</span>
                 </a></li>
@@ -60,7 +60,7 @@
                     <span class="item">Courses</span>
                 </a></li>
                 
-                <li><a href="#">
+                <li><a href="#" class="active">
                     <span class="icon"><i class="fas fa-phone"></i></span>
                     <span class="item">Contact Us</span>
                 </a></li>
@@ -92,30 +92,59 @@
                         <img class="logo_img" src="anna.png" alt="anna university">
                 </div>
             </div>
-            
-            <div class="content">
-                <div class="content1">
-                    <p>Anna University, one of the excellent institutions of the southern part of India has its acquisitions to many institutions in Tamilnadu and one primary institution is the Anna University Regional Campus – Tirunelveli which extends high quality teaching ensuring contiguous progress of the young minds. Our campus has grown into an institution that provides excellent technical education in the field of Engineering and Management, within a short period. It offers excellent platform for the students to show off their talents and equip the students with confidence and high image profile to compete with the fast paced ambitious world.</p>
-                    <button type="button" class="btn1">Know More</button>
+
+            <div class="contentpage">
+                <div class="contentpage1">
+                    <ul>
+                        <li><a href="#">
+                            <span class="icon"><i class='bx bxl-gmail'></i></span>
+                            <span class="item">annaunivtvl@gmail.com</span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon"><i class='bx bxs-phone'></i></span>
+                            <span class="item">0462 - 429 1064</span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon"><i class='bx bxl-whatsapp'></i></span>
+                            <span class="item">99642 99643</span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon"><i class='bx bxl-instagram'></i></span>
+                            <span class="item">annaunivtvl</span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon"><i class='bx bxl-twitter'></i></span>
+                            <span class="item">AnnaUnivTVL</span>
+                        </a></li>
+                        <li><a href="#">
+                            <span class="icon"><i class='bx bxl-facebook-circle'></i></span>
+                            <span class="item">Anna University TVL</span>
+                        </a></li>
+                    </ul>
                 </div>
-                <div class="content2">
-                    <div class="head1">
-                    <h3> Announcements </h3>
-                    <span class="icon"><i class="fas fa-bell"></i></span>
-                    </div>
-                    <div class="news">
-                        <p>CHENNAI: The state higher education department on Tuesday asked Anna University to release the results of students in 18 engineering colleges which were withheld as these colleges had not sent faculty members for evaluation of answer scripts.</p>
-                        <p>CHENNAI: Anna University will host the G20 university connect lecture series on ‘Engaging Youth Minds’ on March 10. Along with this event, the university will conduct a short film contest on the G20 presidency of India.</p>
-                    </div>
+                <div class="contentpage2">
+
+                        <p>Contact Us</p>
+        
+                        <form action="feedback.html" method="post">
+        
+                            <input type="text" name="email" placeholder="Email">
+                            <textarea name="message" placeholder="Message"></textarea>
+                            <button>Send</button>
+        
+                        </form>
+        
+                    
                 </div>
             </div>
-    </div>
 
-    <script>
-        var hamburger = document.querySelector(".hamburger");
-        hamburger.addEventListener("click", function(){
-        document.querySelector("body").classList.toggle("active");
-    })
-    </script>
-</body>
-</html>
+        </div>
+
+        <script>
+            var hamburger = document.querySelector(".hamburger");
+            hamburger.addEventListener("click", function(){
+            document.querySelector("body").classList.toggle("active");
+        })
+        </script>
+    </body>
+    </html>

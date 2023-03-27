@@ -197,7 +197,7 @@ body.active .wrapper .section{
 }
 .wrapper .sidebar ul .sub-menu2{
     position: static;
-    
+    display: none;
 }
 
 .wrapper .sidebar ul ul li{
