@@ -375,6 +375,17 @@ body.active .wrapper .section{
   }
 
 
+  .wrapper .container{
+    max-width: 450px;
+    margin: 150px 400px;
+    padding: 20px 50px 50px 50px;
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+  }
+
+  .regform{
+    
+  }
+
   /*reg css*/
   /*
   :root {

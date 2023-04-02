@@ -68,19 +68,237 @@
             </ul>
         </div>
 
-        <div class="login">
-            <form action="profile.html" class="container">
-              <h1>Student Login</h1>
-          
-              <label for="email"><b>Register No.</b></label>
-              <input type="text" placeholder="Enter Reg No." name="email" required>
-          
-              <label for="dob"><b>DOB</b></label>
-              <input type="date" placeholder="Enter DOB" name="dob" required>
-          
-              <button type="submit" class="btn">Login</button>
-            </form>
-        </div>
+        <div class="container" id="container">
+			<form class="regform row g-3" id="dreg">
+				<h1 class="title">STUDENT REGISTRATION FORM</h1>
+
+				<div class="col-md-6 form-group required">
+					<label class="form-label control-label" for="dname">First Name</label>
+					<input class="form-control" type="text" name="dname" required />
+				</div>
+
+				<div class="col-md-6">
+					<label class="form-label" for="dname">Last Name</label>
+					<input class="form-control" type="text" name="dname" />
+				</div>
+
+				<div class="col-md-4 form-group required">
+					<label class="form-label control-label" for="dob">Date of Birth</label>
+					<input class="form-control" type="date" name="dob" required />
+				</div>
+                <!--
+				
+            -->
+
+            <div class="col-md-4 form-group required">
+                <label class="form-label control-label" for="aadhaar">Register Number</label>
+                <input class="form-control" type="text" name="aadhaar" required />
+            </div>
+				<div class="col-md-4 form-group required">
+					<label class="form-label control-label" for="Department">Department</label>
+					<select class="form-select" name="Department" id="Department" required>
+						<option value="" selected>--Select your Department--</option>
+						<option value="CSE">Computer Science and Engineering</option>
+						<option value="Mech">Mechanical Engineering</option>
+						<option value="ECE">Electronics and Communication Engineering</option>
+                        <option value="Mech">Geoinformatics Engineering</option>
+					</select>
+				</div>
+
+                <div class="col-md-4">
+					<label class="form-label" for="Year">Year</label>
+					<select
+						class="form-select"
+						name="Year"
+						id="Year" required>
+						<option value="" selected>--Select your Year--</option>
+						<option value="fisrt">First Year</option>
+						<option value="second">Secodn Year</option>
+						<option value="third">Third Year</option>
+						<option value="final">Final Year</option>
+						
+					</select>
+				</div>
+                
+				<div class="col-md-7 form-group required">
+					<label class="form-label control-label" for="mail">Email</label>
+					<input class="form-control" type="email" name="mail" required />
+				</div>
+
+				<div class="col-md-5 form-group required">
+					<label class="form-label control-label" for="mobilenum">Mobile Number</label>
+					<input class="form-control" type="text" name="mobilenum" required />
+				</div>
+                <!--
+                <div class="col-md-4 form-group required">
+					<label class="form-label control-label" for="age">Age</label>
+					<input
+						class="form-control"
+						type="number"
+						name="age"
+						readonly
+						required/>
+				</div>
+				<div class="col-md-4 form-group required">
+					<label class="form-label control-label" for="blood">Blood Group</label>
+					<select class="form-select" name="blood" id="blood" required>
+						<option value="" selected>--Select your Blood Group--</option>
+						<option value="ap">A+</option>
+						<option value="an">A-</option>
+						<option value="bp">B+</option>
+						<option value="bn">B-</option>
+						<option value="op">O+</option>
+						<option value="on">O-</option>
+						<option value="abp">AB+</option>
+						<option value="abn">AB-</option>
+					</select>
+				</div>
+
+				<div class="col-8 form-group required">
+					<label class="form-label control-label" for="addrline">Address Line</label>
+					<input class="form-control" type="text" name="addrline" required />
+				</div>
+
+				<div class="col-md-4 form-group required">
+					<label class="form-label control-label" for="city">City</label>
+					<input class="form-control" type="text" name="city" required />
+				</div>
+
+				<div class="col-md-4 form-group required">
+					<label class="form-label control-label" for="district">District</label>
+					<input class="form-control" type="text" name="district" required />
+				</div>
+
+				<div class="col-md-4 form-group required">
+					<label class="form-label control-label" for="state">State</label>
+					<input class="form-control" type="text" name="state" required />
+				</div>
+
+				<div class="col-md-4 form-group required">
+					<label class="form-label control-label" for="pincode">Pincode</label>
+					<input class="form-control" type="text" name="pincode" required />
+				</div>
+
+				<div class="col-md-4 form-group required">
+					<label class="form-label control-label" for="emname">Emergency Contact Name</label>
+					<input class="form-control" type="text" name="emname" required />
+				</div>
+
+				<div class="col-md-4 form-group required">
+					<label class="form-label control-label" for="emmobile">Emergency Contact Number</label>
+					<input class="form-control" type="text" name="emmobile" required />
+				</div>
+
+				<div class="col-md-4 form-group required">
+					<label class="form-label control-label" for="emrelation">Relationship</label>
+					<input class="form-control" type="text" name="emrelation" required />
+				</div>
+
+				<div class="col-md-6">
+					<label class="form-label" for="medical_history">Medical History(if any)</label>
+					<textarea
+						id="medical_history"
+						class="form-control form-textarea"
+						placeholder="Any chronic conditions or illness, allergies, medications taken and recent surgeries."></textarea>
+				</div>
+
+				<div class="col-md-6">
+					<label class="form-label" for="social_history">Social History(if any)</label>
+					<textarea
+						name="social"
+						id="social_history"
+						class="form-control form-textarea"
+						placeholder="Lifestyle habits such as smoking, drinking, drug use, etc."></textarea>
+				</div>
+
+				<div class="form-div col-md-12 form-group required">
+					<label class="form-label control-label" for="organs">Organs I wish to donate :</label><br />
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="checkbox"
+							id="organ"
+							name="organ"
+							value="allorgans"/>
+						<label class="form-check-label" for="organ">All Organs</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="checkbox"
+							id="organ1"
+							name="organ1"
+							value="kidney"/>
+						<label class="form-check-label" for="organ1">Kidney</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="checkbox"
+							id="organ2"
+							name="organ2"
+							value="liver"/>
+						<label class="form-check-label" for="organ2">Liver</label>
+					</div>
+					<br />
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="checkbox"
+							id="organ3"
+							name="organ3"
+							value="lungs"/>
+						<label class="form-check-label" for="organ3">Lungs</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="checkbox"
+							id="organ4"
+							name="organ4"
+							value="pancreas"
+						/>
+						<label class="form-check-label" for="organ4">Pancreas</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input
+							class="form-check-input"
+							type="checkbox"
+							id="organ5"
+							name="organ5"
+							value="small_intestine"/>
+						<label class="form-check-label" for="organ5">Small Intestine</label>
+					</div>
+				</div>
+				<hr />
+
+				<div class="col-12">
+					<div class="form-check">
+						<input
+							class="form-check-input"
+							type="checkbox"
+							value="bonafide"
+							id="check-1" required/>
+						<label class="form-check-label" for="check-1">I declare that I'm a citizen of India and above 18 years of age</label>
+					</div>
+				</div>
+
+				<div class="col-12">
+					<div class="form-check">
+						<input
+							class="form-check-input"
+							type="checkbox"
+							value="agreement"
+							id="check-2" required/>
+						<label class="form-check-label" for="check-2">I agree to the terms and conditions</label>
+					</div>
+				</div>-->
+
+				<div class="form-button">
+					<input class="btn btn-primary" type="submit" value="Submit" />
+				</div>
+			</form>
+		</div> 
         <script>
             $('.login-btn').click(function(){
                 $('.sidebar ul li .sub-menu1').toggleClass("show");
