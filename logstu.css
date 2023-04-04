@@ -280,6 +280,7 @@ body.active .wrapper .section{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 20px;
     margin-top: 150px;
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
   }
   
   /* Full-width input fields */

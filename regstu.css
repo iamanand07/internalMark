@@ -267,7 +267,7 @@ body.active .wrapper .section{
 
 
   
-  /*LOGIN PAGE CSS*/
+  /*LOGIN PAGE CSS
   .container {
     
     position: absolute;
@@ -282,31 +282,19 @@ body.active .wrapper .section{
     margin-top: 150px;
   }
   
-  /* Full-width input fields */
-  input[type="date"],
-  input[type="date"] {
-    width: 100%;
-    padding: 15px;
-    border-radius: 20px;
-    margin: 5px 0 22px 0;
-    border: none;
-    background: #C7D0D5;
-  }
+    h1{
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 20px;
   
-  input[type="text"]:focus,
-  input[type="password"]:focus {
-    background-color:#687477;
-    outline: none;
-    border-radius: 20px;
   }
-  
-  /* Set a style for the submit button */
-  .btn {
+
+    .btn {
     font-weight: bold;
     font-size: larger;
     background-color: #E2C2B3 ;
     color:#403234;
-    padding: 16px 20px;
+    padding: 10px 10px 50px 50px;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -316,35 +304,81 @@ body.active .wrapper .section{
   .btn:hover {
     opacity: 1;
   }
-  /*FACULTY LOGIN PAGE*/
-  .container1 {
-    
-    position: absolute;
-    left: 0;
-    margin-top: 50px;
-    margin-left: 280px;
-    max-width: 300px;
-    padding: 30px;
-    background-color:#F5F5F5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 20px;
-  } 
-   /* Full-width input fields */
+
+  
+  
+  */
+  
+  /* Full-width input fields */
+  input[type="date"],
+  input[type="date"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 2px solid #C7D0D5;
+    background: white;
+    border-radius: 5px;
+  }
+
+  input[type="date"]:focus,
+  input[type="date"]:focus {
+    background-color:#C7D0D5;
+    outline: none;
+    border-radius: 5px;
+  }
+
+  /* Full-width input fields */
   input[type="text"],
   input[type="password"] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
-    border: none;
-    background: #C7D0D5;
-    border-radius: 20px;
+    border: 2px solid #C7D0D5;
+    background: white;
+    border-radius: 5px;
   }
   
   input[type="text"]:focus,
   input[type="password"]:focus {
-    background-color:#687477;
+    background-color:#C7D0D5;
     outline: none;
-    border-radius: 20px;
+    border-radius: 5px;
+  }
+
+
+  input[type="email"],
+  input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 2px solid #C7D0D5;
+    background: white;
+    border-radius: 5px;
+  }
+  
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    background-color:#C7D0D5;
+    outline: none;
+    border-radius: 5px;
+  }
+
+
+  select[class="form-select"],
+  select[class="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: 2px solid #C7D0D5;
+    background: white;
+    border-radius: 5px;
+  }
+  
+  select[class="form-select"]:focus,
+  select[class="password"]:focus {
+    background-color:#C7D0D5;
+    outline: none;
+    border-radius: 5px;
   }
   
   /* Set a style for the submit button */
@@ -357,26 +391,123 @@ body.active .wrapper .section{
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 80%;
+    width: 30%;
     opacity: 0.9;
-    margin-left: 30px;
+    text-align: center;
+    margin-left: 220px;
   }
   
   .btn:hover {
     opacity: 1;
   }
   
-  h1{
-    padding: 5px;
-    text-align: center;
-    margin-bottom: 20px;
-  
-  }
-  
+
+  /* register CSS */
 
   .wrapper .container{
-    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    width: 750px;
     margin: 150px 400px;
-    padding: 20px 50px;
+    padding: 20px 20px 50px 50px;
     box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    position: absolute;
+    right: 0;
+    margin-top: 67px;
+    margin-right: 200px;
+    background-color:#F5F5F5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    margin-top: 150px;
+  }
+  
+  .wrapper .container .head{
+    padding: 10px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: -20px;
+  }
+
+
+  /* row 1 */
+
+  .wrapper .container .row1{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    
+  }
+
+  .wrapper .container .row1 .col-md-6 {
+    padding: 10px 10px;
+    max-width: 50%;
+    width: 320px;
+  }
+
+  .wrapper .container .row1 .col-md-61 {
+    padding: 10px 10px;
+    max-width: 50%;
+    width: 320px;
+  }
+
+  /* row 2 */
+
+  .wrapper .container .row2{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .wrapper .container .row2 .col-md-4 {
+    padding: 10px 10px;
+    max-width: 50%;
+    width: 320px;
+  }
+
+  .wrapper .container .row2 .col-md-41 {
+    padding: 10px 10px;
+    max-width: 50%;
+    width: 320px;
+  }
+
+  /* row 3 */
+
+  .wrapper .container .row3{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .wrapper .container .row3 .col-md-3 {
+    padding: 10px 10px;
+    max-width: 50%;
+    width: 320px;
+  }
+
+  .wrapper .container .row3 .col-md-31 {
+    padding: 10px 10px;
+    max-width: 50%;
+    width: 320px;
+  }
+
+
+  /* row 4 */
+
+
+  .wrapper .container .row4{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+  .wrapper .container .row4 .col-md-7 {
+    padding: 10px 10px;
+    max-width: 50%;
+    width: 320px;
+  }
+
+  .wrapper .container .row4 .col-md-5 {
+    padding: 10px 10px;
+    max-width: 50%;
+    width: 320px;
   }

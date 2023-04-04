@@ -70,64 +70,72 @@
 
         <div class="container" id="container">
 			<form class="regform row g-3" id="dreg">
-				<h1 class="title">STUDENT REGISTRATION FORM</h1>
 
+				<div class="head">
+				<h1 class="title">STUDENT REGISTRATION FORM</h1>
+				</div>
+
+				<div class="row1">
 				<div class="col-md-6 form-group required">
 					<label class="form-label control-label" for="dname">First Name</label>
 					<input class="form-control" type="text" name="dname" required />
 				</div>
 
-				<div class="col-md-6">
+				<div class="col-md-61">
 					<label class="form-label" for="dname">Last Name</label>
 					<input class="form-control" type="text" name="dname" />
 				</div>
-
-				<div class="col-md-4 form-group required">
-					<label class="form-label control-label" for="dob">Date of Birth</label>
-					<input class="form-control" type="date" name="dob" required />
-				</div>
-                <!--
-				
-            -->
-
-            <div class="col-md-4 form-group required">
-                <label class="form-label control-label" for="aadhaar">Register Number</label>
-                <input class="form-control" type="text" name="aadhaar" required />
-            </div>
-				<div class="col-md-4 form-group required">
-					<label class="form-label control-label" for="Department">Department</label>
-					<select class="form-select" name="Department" id="Department" required>
-						<option value="" selected>--Select your Department--</option>
-						<option value="CSE">Computer Science and Engineering</option>
-						<option value="Mech">Mechanical Engineering</option>
-						<option value="ECE">Electronics and Communication Engineering</option>
-                        <option value="Mech">Geoinformatics Engineering</option>
-					</select>
 				</div>
 
-                <div class="col-md-4">
-					<label class="form-label" for="Year">Year</label>
-					<select
-						class="form-select"
-						name="Year"
-						id="Year" required>
-						<option value="" selected>--Select your Year--</option>
-						<option value="fisrt">First Year</option>
-						<option value="second">Secodn Year</option>
-						<option value="third">Third Year</option>
-						<option value="final">Final Year</option>
-						
-					</select>
-				</div>
-                
-				<div class="col-md-7 form-group required">
-					<label class="form-label control-label" for="mail">Email</label>
-					<input class="form-control" type="email" name="mail" required />
+				<div class="row2">
+					<div class="col-md-4 form-group required">
+						<label class="form-label control-label" for="dob">Date of Birth</label>
+						<input class="form-control" type="date" name="dob" required />
+					</div>
+					<div class="col-md-41 form-group required">
+						<label class="form-label control-label" for="aadhaar">Register Number</label>
+						<input class="form-control" type="text" name="aadhaar" required />
+					</div>
 				</div>
 
-				<div class="col-md-5 form-group required">
-					<label class="form-label control-label" for="mobilenum">Mobile Number</label>
-					<input class="form-control" type="text" name="mobilenum" required />
+				<div class="row3">
+					<div class="col-md-3 form-group required">
+						<label class="form-label control-label" for="Department">Department</label><br>
+						<select class="form-select" name="Department" id="Department" required>
+							<option value="" selected>--Select your Department--</option>
+							<option value="CSE">Computer Science and Engineering</option>
+							<option value="Mech">Mechanical Engineering</option>
+							<option value="ECE">Electronics and Communication Engineering</option>
+							<option value="Mech">Geoinformatics Engineering</option>
+						</select>
+					</div>
+
+					<div class="col-md-31">
+						<label class="form-label" for="Year">Year</label><br>
+						<select
+							class="form-select"
+							name="Year"
+							id="Year" required>
+							<option value="" selected>--Select your Year--</option>
+							<option value="fisrt">First Year</option>
+							<option value="second">Second Year</option>
+							<option value="third">Third Year</option>
+							<option value="final">Final Year</option>
+							
+						</select>
+					</div>
+				</div>
+
+				<div class="row4">
+					<div class="col-md-7 form-group required">
+						<label class="form-label control-label" for="mail">Email</label>
+						<input class="form-control" type="email" name="mail" required />
+					</div>
+
+					<div class="col-md-5 form-group required">
+						<label class="form-label control-label" for="mobilenum">Mobile Number</label>
+						<input class="form-control" type="text" name="mobilenum" required />
+					</div>
 				</div>
                 <!--
                 <div class="col-md-4 form-group required">
@@ -293,10 +301,11 @@
 						<label class="form-check-label" for="check-2">I agree to the terms and conditions</label>
 					</div>
 				</div>-->
-
+			<div class="buttab">
 				<div class="form-button">
 					<input class="btn btn-primary" type="submit" value="Submit" />
 				</div>
+			</div>
 			</form>
 		</div> 
         <script>

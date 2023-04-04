@@ -88,43 +88,67 @@
 	
 		<div class="container" id="container">
 			<form class="regform row g-3" id="dreg">
-				<h1 class="title">FACULTY REGISTRATION FORM</h1>
 
-				<div class="col-md-6 form-group required">
-					<label class="form-label control-label" for="dname">First Name</label>
-					<input class="form-control" type="text" name="dname" required />
+				<div class="head">
+					<h1 class="title">FACULTY REGISTRATION FORM</h1>
 				</div>
 
-				<div class="col-md-6">
-					<label class="form-label" for="dname">Last Name</label>
-					<input class="form-control" type="text" name="dname" />
+				<div class="row1">
+					<div class="col-md-6 form-group required">
+						<label class="form-label control-label" for="dname">First Name</label>
+						<input class="form-control" type="text" name="dname" required />
+					</div>
+
+					<div class="col-md-6">
+						<label class="form-label" for="dname">Last Name</label>
+						<input class="form-control" type="text" name="dname" />
+					</div>
 				</div>
 
-				<div class="col-md-4 form-group required">
-					<label class="form-label control-label" for="s-id">Staff ID</label>
-					<input class="form-control" type="text" name="s-id" required />
+
+				<div class="row2">
+					<div class="col-md-4 form-group required">
+						<label class="form-label control-label" for="s-id">Staff ID</label>
+						<input class="form-control" type="text" name="s-id" required />
+					</div>
+
+					<div class="col-md-4 form-group required">
+						<label class="form-label control-label" for="position">Position</label>
+						<select class="form-select" name="position" id="position" required>
+							<option value="" selected>--Select your Position--</option>
+							<option value="male">Head of Department</option>
+							<option value="female">Professor</option>
+							<option value="others">Assistant Professor</option>
+							<option value="others">Juniour Professor</option>
+						</select>
+					</div>
 				</div>
 
-				<div class="col-md-7 form-group required">
-					<label class="form-label control-label" for="mail">Email</label>
-					<input class="form-control" type="email" name="mail" required />
+
+				<div class="row3">
+					<div class="col-md-3 form-group required">
+						<label class="form-label control-label" for="mail">Email</label>
+						<input class="form-control" type="email" name="mail" required />
+					</div>
+
+					<div class="col-md-31 form-group required">
+						<label class="form-label control-label" for="mobilenum">Mobile Number</label>
+						<input class="form-control" type="text" name="mobilenum" required />
+					</div>
 				</div>
 
-				<div class="col-md-5 form-group required">
-					<label class="form-label control-label" for="mobilenum">Mobile Number</label>
-					<input class="form-control" type="text" name="mobilenum" required />
-				</div>
 
-				<div class="col-8 form-group required">
-					<label class="form-label control-label" for="password">Password</label>
-					<input class="form-control" type="password" name="password" required />
-				</div>
+				<div class="row4">
+					<div class="col-md-7 form-group required">
+						<label class="form-label control-label" for="password">Password</label>
+						<input class="form-control" type="password" name="password" required />
+					</div>
 
-				<div class="col-md-4 form-group required">
-					<label class="form-label control-label" for="cpassword">Confirm Password</label>
-					<input class="form-control" type="password" name="cpassword" required />
+					<div class="col-md-5 form-group required">
+						<label class="form-label control-label" for="cpassword">Confirm Password</label>
+						<input class="form-control" type="password" name="cpassword" required />
+					</div>
 				</div>
-
 
 		<!--		<div class="col-md-4 form-group required">
 					<label class="form-label control-label" for="dob">Date of Birth</label>
@@ -310,9 +334,10 @@
 						<label class="form-check-label" for="check-2">I agree to the terms and conditions</label>
 					</div>
 				</div> -->
-
-				<div class="form-button">
-					<input class="btn btn-primary" type="submit" value="Submit" />
+				<div class="buttab">
+					<div class="form-button">
+						<input class="btn btn-primary" type="submit" value="Submit" />
+					</div>
 				</div>
 			</form>
 		</div> 
