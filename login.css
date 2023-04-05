@@ -273,7 +273,7 @@ body.active .wrapper .section{
     
     position: absolute;
     right: 0;
-    
+   
     margin-right: 450px;
     max-width: 400px;
     padding: 30px 30px 30px 30px;
@@ -367,6 +367,7 @@ body.active .wrapper .section{
   .login{
     display: flex;
     flex-direction: row;
+    
   }
 
 
@@ -389,3 +390,14 @@ body.active .wrapper .section{
   .login .choose .container1 .col-md-12 {
     font-size: larger;
   } 
+
+
+  .login .fp{
+    text-align: right;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+
+  .login .fp:hover{
+    text-decoration: underline;
+}
