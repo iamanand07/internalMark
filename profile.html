@@ -8,7 +8,17 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body>
-    <div class="page">
+
+  <div class="page2">
+      <div class="sidebar">
+        <div class="profile">
+          <img src="an.jpg" alt="an">
+          <p>Dr.S.Anand</p>
+          <h3>Assistant Professor</h3>
+        </div>
+      </div>
+  </div>
+   <div class="page">
       <div class="top">
           <div class="header">
             
@@ -20,13 +30,16 @@
               <div class="logo">
                   <a href="#" class="header">Selection</a>
               </div>
+              <div class="menu">
+                <a href="#"><i class='bx bxs-user-circle'></i></a>
+              </div>
 
           </div>
       </div>
     <div class="bottom">
     <div class="form">
       <fieldset>
-      <legend> Selection Info </legend>
+      <legend> Selection Info </legend> 
       <label for="Department">Department:</label>
       <br>
       <br>
@@ -66,8 +79,16 @@
       <button action="" type="submit" class="btn">Submit</button>
     </fieldset>
       
-    </div>
-  </div> 
-  </div>
+        </div>
+      </div> 
+    </div>-->
+
+
+  <script>
+    var hamburger = document.querySelector(".menu");
+    hamburger.addEventListener("click", function(){
+    document.querySelector("body").classList.toggle("active");
+})
+</script>
   </body>
 </html>
