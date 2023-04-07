@@ -1,94 +1,101 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Faculty's Profile</title>
-    <link rel="stylesheet" href="profile.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  </head>
-  <body>
-
-  <div class="page2">
-      <div class="sidebar">
-        <div class="profile">
-          <img src="an.jpg" alt="an">
-          <p>Dr.S.Anand</p>
-          <h3>Assistant Professor</h3>
+</head>
+<body class="active">
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="profile">
+                <img src="1.jpg" alt="pro">
+                <h3>Dr.S.Anand</h3>
+                <p>Assistant Professor</p>
+            </div>
+            <ul>
+                <li><a href="#">
+                    <span class="icon"><i class='bx bx-desktop' ></i></span>
+                    <span class="item">My Dashboard</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><i class='bx bxs-phone-call'></i></span>
+                    <span class="item">75876 58932</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><i class='bx bx-envelope'></i></span>
+                    <span class="item">iamanand7@gmail.com</span>
+                </a></li>
+                <li><a href="#">
+                    <span class="icon"><i class='bx bx-cog'></i></span>
+                    <span class="item">Settings</span>
+                </a></li>
+            </ul>
         </div>
-      </div>
-  </div>
-   <div class="page">
-      <div class="top">
-          <div class="header">
-            
-              <div class="home">
-                  <a href="home.html">
-                    <i class='bx bxs-home'></i>
-                  </a>
-              </div>
-              <div class="logo">
-                  <a href="#" class="header">Selection</a>
-              </div>
-              <div class="menu">
-                <a href="#"><i class='bx bxs-user-circle'></i></a>
-              </div>
 
-          </div>
-      </div>
-    <div class="bottom">
-    <div class="form">
-      <fieldset>
-      <legend> Selection Info </legend> 
-      <label for="Department">Department:</label>
-      <br>
-      <br>
-      <select name="Department" id="Department">
-        <option value="Computer Science and Engineering">Computer Science and Engineering</option>
-        <option value="Mechanical Engineering">Mechanical Engineering</option>
-        <option value="Electronics and Communication Engineering ">Electronics and Communication Engineering </option>
-        <option value="Geo-Informatics" selected>Geo-Informatics</option>
-      </select>
-
-      <br>
-      <br>
-
-      <label for="Year">Year:</label>
-      <br>
-      <br>    
-      <select name="Year" id="Year">
-        <option value="FIRST">FIRST</option>
-        <option value="SECOND">SECOND</option>
-        <option value="THIRD">THIRD</option>
-        <option value="FOURTH" selected>FOURTH</option>
-      </select>
-      <br>
-      <br>    
-
-      <label for="Subject">Subject:</label>
-      <br>
-      <br>
-      <select name="Subject" id="Subject">
-        <option value="OOPS">OOPS</option>
-        <option value="Complier Design">Compiler Design</option>
-        <option value="Artificial Intelligence">Artificial Intelligence</option>
-        <option value="Cloud Computing" selected>Cloud Computing</option>
-      </select>
-      <br>
-      <br>
-      <button action="" type="submit" class="btn">Submit</button>
-    </fieldset>
-      
+        <div class="section">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <a href="#"><i class='bx bxs-user-circle'></i></a>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="form">
+                    <fieldset>
+                        <!-- <legend> Selection Info </legend>  -->
+                        <label for="Department">Department:</label>
+                        <br>
+                        <br>
+                        <select name="Department" id="Department">
+                        <option value="Computer Science and Engineering">Computer Science and Engineering</option>
+                        <option value="Mechanical Engineering">Mechanical Engineering</option>
+                        <option value="Electronics and Communication Engineering ">Electronics and Communication Engineering </option>
+                        <option value="Geo-Informatics" selected>Geo-Informatics</option>
+                        </select>
+                
+                        <br>
+                        <br>
+                
+                        <label for="Year">Year:</label>
+                        <br>
+                        <br>    
+                        <select name="Year" id="Year">
+                        <option value="FIRST">FIRST</option>
+                        <option value="SECOND">SECOND</option>
+                        <option value="THIRD">THIRD</option>
+                        <option value="FOURTH" selected>FOURTH</option>
+                        </select>
+                        <br>
+                        <br>    
+                
+                        <label for="Subject">Subject:</label>
+                        <br>
+                        <br>
+                        <select name="Subject" id="Subject">
+                        <option value="OOPS">OOPS</option>
+                        <option value="Complier Design">Compiler Design</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                        <option value="Cloud Computing" selected>Cloud Computing</option>
+                        </select>
+                        <br>
+                        <br>
+                        <button action="" type="submit" class="btn">Submit</button>
+                    </fieldset>
+                
+                </div>
+            </div> 
+             
         </div>
-      </div> 
-    </div>-->
-
-
-  <script>
-    var hamburger = document.querySelector(".menu");
-    hamburger.addEventListener("click", function(){
-    document.querySelector("body").classList.toggle("active");
-})
-</script>
-  </body>
+    </div>
+    
+    <script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
+    </script>
+</body>
 </html>
