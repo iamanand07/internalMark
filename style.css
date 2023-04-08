@@ -26,6 +26,7 @@ body{
 .wrapper .sidebar .profile{
     margin-bottom: 30px;
     text-align: center;
+    border-bottom: 2px solid rgb(241, 237, 237);
 }
 
 .wrapper .sidebar .profile img{
@@ -44,12 +45,14 @@ body{
 .wrapper .sidebar .profile p{
     color: rgb(206, 240, 253);
     font-size: 14px;
+    margin-bottom: 30px;
 }
+
 
 .wrapper .sidebar ul li a{
     display: block;
     padding: 13px 30px;
-    border-bottom: 1px solid rgb(241, 237, 237);
+    /*border-bottom: 1px solid rgb(241, 237, 237);*/
     color: rgb(241, 237, 237);
     font-size: 16px;
     position: relative;
@@ -80,6 +83,7 @@ body{
 .wrapper .section .top_navbar .hamburger a{
     font-size: 33px;
     color: #f4fbff;
+    
 }
 
 .wrapper .section .top_navbar .hamburger a:hover{
@@ -132,7 +136,64 @@ select:focus{
   backdrop-filter: blur 100px;
   border: 3px Solid black;
   max-width: 400px;
-  margin-left: 300px;
-  margin-top: 120px;
+  margin-left: 400px;
+  margin-top: 30px;
+ 
  }
 
+ .wrapper .section .top_navbar .logo a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-decoration: solid;
+    color: white;
+    padding-left: 30px;
+    padding-right: 50px;
+ }
+
+ .wrapper .section .top_navbar .hamburger1 a{
+    font-size: 33px;
+    color:rgb(104, 103, 103);
+    margin-left: 900px;
+}
+
+.wrapper .section .top_navbar .hamburger1 a:hover{
+    color: #a2ecff;
+}
+
+.wrapper .section .top_navbar .logo1 a:hover{
+    color: #a2ecff;
+}
+
+
+.wrapper .section .top_navbar .logo1 a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-decoration: solid;
+    color:rgb(104, 103, 103);
+    padding-left: 30px;
+    
+ }
+
+ .btn1 {
+    font-size: larger;
+    background-color: #01579B;
+    border-radius: 5px;
+    color: #F5F5F5;
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    margin-left: 75px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .wrapper .sidebar ul {
+    border-bottom: 2px solid rgb(241, 237, 237);
+  }
+
+  .wrapper .section .bottom h1{
+    color: black;
+    margin-left: 400px;
+    margin-top: 100px;
+  }
