@@ -100,7 +100,8 @@ body{
 }
 
 .wrapper .section .top_navbar .hamburger a:hover{
-    color:cyan;
+    color:white;
+    
 }
 
 body.active .wrapper .sidebar{
@@ -511,3 +512,83 @@ body.active .wrapper .section{
     max-width: 50%;
     width: 320px;
   }
+
+  
+.form-group.required .control-label:after {
+	content: "*";
+	color: red;
+}
+
+.form-label {
+	font-size: large;
+}
+
+
+
+/*
+body {
+	color: var(--text-color) !important;
+	background-color: var(--background-color) !important;
+}
+
+.container {
+	height: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 100px 0;
+}
+
+.title {
+	font-size: x-large;
+	font-weight: bold;
+	text-align: center;
+	padding: 20px;
+}
+.regform {
+	display: flex;
+	background: white;
+	backdrop-filter: blur(15px);
+	width: 70vw;
+	box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+	border: none;
+	border-radius: 25px;
+	padding: 20px 50px 50px 50px;
+  height: 500px;
+}
+
+.form-check-inline {
+	margin-right: 5rem !important;
+}
+
+.form-label {
+	font-size: large;
+}
+
+.form-button {
+	display: flex;
+	justify-content: center;
+}
+
+.form-button input {
+	padding: 10px 20px;
+	background: var(--text-color);
+	border-radius: 12px;
+	border: none;
+	transition: 0.2s;
+}
+
+.form-button input:hover {
+	background: var(--dark);
+}
+
+.form-group.required .control-label:after {
+	content: "*";
+	color: red;
+}
+
+.form-textarea {
+	resize: none;
+	height: 150px;
+}
+*/

@@ -401,3 +401,9 @@ body.active .wrapper .section{
   .login .fp:hover{
     text-decoration: underline;
 }
+
+.form-group.required .control-label:after {
+	content: "*";
+	color: red;
+}
+
