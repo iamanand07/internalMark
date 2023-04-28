@@ -54,7 +54,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'internalMark.urls'
 
-USER_AUTH_MODEL = 'internal.User'
+AUTH_USER_MODEL = 'internal.User'
 
 TEMPLATES = [
     {
@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'internalMark.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR/'db.sqlite3',
+        'NAME': BASE_DIR/'db1.sqlite3',
     }
 }
 

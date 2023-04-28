@@ -1,42 +1,51 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 
-# Create your models here.
-# class User(AbstractUser):
-#     userid = models.CharField(max_length=20 ,unique=True)
-#     USERNAME_FIELD = 'userid'
-#     REQUIRED_FIELDS = []
-#     is_teacher = models.BooleanField(default=False)
-#     is_student = models.BooleanField(default=False)
-    
-    
-# class Teacher(models.Model):
-#     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
-#     userid = models.CharField(max_length=20, null=True)
-#     email = models.EmailField(max_length=200)
-#     mobile = models.CharField(max_length=10)
-    
-    
-    
-# class Student(models.Model):
-#     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
-#     userid = models.CharField(max_length=20, null=True)
-#     email = models.EmailField(max_length=200)
-#     mobile = models.CharField(max_length=10)
 
 
-#     # Add the related_name argument to groups and user_permissions fields
-#     groups = models.ManyToManyField(
-#         Group,
-#         verbose_name=_('groups'),
-#         blank=True,
-#         help_text=_('The groups this user belongs to.'),
-#         related_name='internal_users'  # Add related_name argument here
-#     )
-#     user_permissions = models.ManyToManyField(
-#         Permission,
-#         verbose_name=_('user permissions'),
-#         blank=True,
-#         help_text=_('Specific permissions for this user.'),
-#         related_name='internal_users'  # Add related_name argument here
-#     )
+class User(AbstractUser):
+    username = models.CharField(max_length=15 ,unique=True)
+    is_admin =models.BooleanField('Is Admin', default=False)
+    is_student =models.BooleanField('Is Student', default=False)
+    is_staff =models.BooleanField('Is Staff', default=False)
+    
+    def __str__(self):
+        return self.username
+    
+class Teacher(models.Model):
+     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
+     userid = models.CharField(max_length=20, null=True)
+     name = models.CharField(max_length=60, null=True)
+     mobile = models.CharField(max_length=10)
+     
+     def __str__(self):
+        return self.userid
+    
+    
+    
+class Student(models.Model):
+     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
+     userid = models.CharField(max_length=20, null=True)
+     name = models.CharField(max_length=50, null = True)
+     mobile = models.CharField(max_length=10)
+     
+     def __str__(self):
+        return self.userid
+     
+class Subject(models.Model): 
+    subject = models.ManyToManyField(Student)
+    
+    def __str__(self):
+        return self.subject
+    
+     
+class Score(models.Model):
+    student = models.ForeignKey(User, limit_choices_to={'user_type': 'Student'}, related_name='scored', on_delete=models.CASCADE)
+    subject = models.ForeignKey(Subject, on_delete=models.CASCADE)
+    teacher = models.ForeignKey(User, limit_choices_to={'user_type': 'Teacher'}, related_name='marked', on_delete=models.CASCADE)
+    exam = models.CharField(max_length=50)
+    exam_date = models.DateField()
+    score = models.IntegerField()
+    out_of = models.IntegerField()
+    
+    

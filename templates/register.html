@@ -613,16 +613,16 @@ body {
     <div class="container" id="container">
       {% block content %}
 
-			<form class="regform row g-3" id="dreg" action="">
+      {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-danger" role="alert">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
+			<form class="regform row g-3" id="dreg" action="{% url 'register' %}" method="POST">
         {% csrf_token %}
 				<div class="head">
-          {% if messages %}
-          {% for message in messages %}
-            <div class="alert alert-danger" role="alert">
-              {{ message }}
-            </div>
-          {% endfor %}
-        {% endif %}
 					<h1 class="title">REGISTRATION FORM</h1>
 				</div>
 		

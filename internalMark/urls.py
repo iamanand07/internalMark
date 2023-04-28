@@ -19,7 +19,14 @@ from internal import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.SignUpPage,name='register'),
-    path('login',views.LoginPage,name='login'),
-    path('home',views.HomePage,name='home'),
+    path('',views.HomePage,name='home'),
+    path('regfac',views.SignUpStaff,name='regfac'),
+    path('regstu',views.SignUpStudent,name='regstu'),
+    #path('register',views.SignUpPage,name='register'),
+    #path('login',views.LoginPage,name='login'),
+    path('logstu',views.StudentLogin,name='logstu'),
+    path('logfac',views.StaffLogin,name='logfac'),
+    path('logadm',views.AdminLogin,name='logadm'),
+    
+    
 ]
