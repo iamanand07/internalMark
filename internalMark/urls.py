@@ -27,6 +27,9 @@ urlpatterns = [
     path('logstu',views.StudentLogin,name='logstu'),
     path('logfac',views.StaffLogin,name='logfac'),
     path('logadm',views.AdminLogin,name='logadm'),
+    path('student_dashboard',views.StudentLogin,name='student_dashboard'),
+    path('teacher_dashboard',views.StaffLogin,name='teacher_dashboard'),
+    
     
     
 ]

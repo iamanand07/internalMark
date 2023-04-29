@@ -393,9 +393,10 @@
     {% include 'navbar.html' %}
 
         <div class="login">
-            <form action=" " class="container" method="POST">
+            <form action="student_dashboard" class="container" method="POST">
+                  {%csrf_token%}
               <h1>Student Login</h1>
-          {%csrf_token%}
+        
               <label for="Register"><b>Register No.</b></label>
               <input type="text" placeholder="Enter Reg No." name="username" required>
           

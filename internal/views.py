@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
-from django.contrib.auth.models import User
+#from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
-from .models import Student, Teacher, Subject
+from .models import User,Student, Teacher, Subject
 
 # Create your views here.
 
@@ -17,9 +17,15 @@ def SignUpStaff(request):
         mobile=request.POST['mobilenum']
      
         if password1 == password2:
-            user = User.objects.create(username=username)
+            is_staff = True
+            user = User.objects.create(username=username,first_name=staffname,is_staff = is_staff)
             user.set_password(password1)
             user.save()
+            staff = Teacher.objects.create(user = user)
+            staff.name = staffname
+            staff.userid = username
+            staff.mobile = mobile
+            staff.save()
             messages.success(request, 'Registration successful! You can now login.')
             return redirect('logfac')
         else:
@@ -70,7 +76,7 @@ def StudentLogin(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('student_dashboard')
+            return render(request,'student_dashboard.html')
         else:
             messages.error(request, 'Invalid username or password')
     return render(request,'logstu.html')
@@ -83,7 +89,7 @@ def StaffLogin(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('teacher_dashboard')
+            return render(request,'teacher_dashboard.html')
         else:
             messages.error(request, 'Invalid username or password')
     return render(request,'logfac.html')
