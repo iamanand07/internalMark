@@ -392,7 +392,7 @@ body.active .wrapper .section{
 <body>
     {% include 'navbar.html'  %}
         <div class="login">
-        <form action="" class="container" method="POST">
+        <form action="{%url 'admin_dashboard'%}" class="container" method="POST">
             {% csrf_token %}
             <h1>Admin Login</h1>
         

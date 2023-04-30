@@ -168,7 +168,7 @@
       <h3>Anna University</h3>
     </div>
     <div class="right_area">
-      <a href="/logout" class="logout_btn">Logout</a>
+      <a href="{% url 'logout'%}" class="logout_btn">Logout</a>
     </div>
   </header>
   <!--header area end-->
@@ -176,7 +176,7 @@
   <div class="sidebar">
     <center>
 
-      {% comment %} <img src="{% static "image/teacher.png" %}" class="profile_image" alt=""> {% endcomment %}
+     <img src="{% static "assets/teacher.png" %}" class="profile_image" alt="">
       <h4>{{request.user.first_name}}</h4>
       <h6 style="color: rgb(255, 255, 255);">( Teacher )</h6>
 

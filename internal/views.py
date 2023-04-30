@@ -102,8 +102,12 @@ def AdminLogin(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('admin_dashboard')
+            return render(request,'admin_dashboard.html')
         else:
             messages.error(request, 'Invalid username or password')
     return render(request,'logadm.html')
+
+def UserLogout(request):
+    logout(request)
+    return redirect('home')
 

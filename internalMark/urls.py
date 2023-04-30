@@ -16,8 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from internal import views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
+    
     path('admin/', admin.site.urls),
     path('',views.HomePage,name='home'),
     path('regfac',views.SignUpStaff,name='regfac'),
@@ -29,7 +32,9 @@ urlpatterns = [
     path('logadm',views.AdminLogin,name='logadm'),
     path('student_dashboard',views.StudentLogin,name='student_dashboard'),
     path('teacher_dashboard',views.StaffLogin,name='teacher_dashboard'),
+    path('admin_dashboard',views.AdminLogin,name='admin_dashboard'),
+    path('logout',views.UserLogout,name='logout'),
     
     
     
-]
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

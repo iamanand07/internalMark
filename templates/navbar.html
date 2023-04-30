@@ -281,11 +281,11 @@ body.active .wrapper .section{
     <div class="wrapper">
         <div class="sidebar">
             <div class="profile">
-                <img src="{% static 'assets/anna.png' %}" alt="anna">
+                <img src="{% static 'assets/annalogo.png' %}" alt="anna">
                 <p> AURC-TVL</p>
             </div>
             <ul>
-                <li><a href="#" class="active">
+                <li><a href="{%url 'home'%}" class="active">
                     <span class="icon"><i class="fas fa-home"></i></span>
                     <span class="item">Home</span>
                 </a></li>
@@ -355,7 +355,7 @@ body.active .wrapper .section{
                 </div>
                 <div class="logo">
                     <a href="https://auttvl.ac.in/" aria-label="Logo" class="header-main__logo"></a>
-                        <img class="logo_img" src="/static/annalogo.png" alt="anna university">
+                        <img class="logo_img" src="{% static 'assets/anna.png' %}" alt="anna university">
                 </div>
             </div>
 
