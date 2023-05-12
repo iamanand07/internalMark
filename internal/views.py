@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 #from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
-from .models import User,Student, Teacher, Subject
+from .models import User,Student, Teacher, Course
 
 # Create your views here.
 
@@ -69,6 +69,7 @@ def LoginPage(request):
             messages.error(request, 'Invalid username or password')
     return render(request, 'login.html')
 
+# for student login he will redirected to student dashboard
 def StudentLogin(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -81,7 +82,7 @@ def StudentLogin(request):
             messages.error(request, 'Invalid username or password')
     return render(request,'logstu.html')
 
-
+# for teacher login he will redirected to teacher dashboard
 def StaffLogin(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -94,7 +95,7 @@ def StaffLogin(request):
             messages.error(request, 'Invalid username or password')
     return render(request,'logfac.html')
 
-
+# for admin login he will redirected to admin dashboard
 def AdminLogin(request):
     if request.method == 'POST':
         username = request.POST['username']
@@ -107,7 +108,53 @@ def AdminLogin(request):
             messages.error(request, 'Invalid username or password')
     return render(request,'logadm.html')
 
+# For every logout
 def UserLogout(request):
     logout(request)
     return redirect('home')
+
+
+def admin_view_course(request):
+    return render(request,'admin_view_course.html')
+
+def admin_teacher(request):
+    return render(request,'admin_teacher.html')
+
+
+def admin_student(request):
+    return render(request,'admin_student.html')
+
+def add_course(request):
+        return render(request,'add_course.html')
+ 
+#for entering course by admin
+def submit_form(request):
+    current_user = request.user
+    if request.method == 'POST':
+        # Get form data
+        course_code = request.POST['course_id']
+        course_name = request.POST['coursename']
+        staff_id = request.POST['StaffID']
+
+        # Insert form data into SQLite database
+        course = Course.objects.create(course_code = course_code)
+        staff = Teacher.objects.filter(user_id = staff_id)
+        course.course_name = course_name
+        course.save()
+        current_user.teacher.add(course)
+        current_user.teacher.save()
+        messages.success(request, "Course added successfully")
+        return render(request, 'add_course.html')
+
+        # Redirect to a new page that will display the form data
+        # return render(request,'teacher_course.html', {'courses': courses})
+    else:
+        return render(request, 'add_course.html')
+    
+def show_courses(request):
+    current_user = request.user
+    course_list = (current_user.teacher.courses.all())
+    print(course_list)
+    return render(request, 'teacher_course.html', {'courses': course_list})
+
 

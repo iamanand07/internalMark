@@ -177,14 +177,15 @@
     <center>
 
      <img src="{% static "assets/teacher.png" %}" class="profile_image" alt="">
-      <h4>{{request.user.first_name}}</h4>
+      <h4>{{request.user.first_name | capfirst}}</h4>
       <h6 style="color: rgb(255, 255, 255);">( Teacher )</h6>
 
     </center>
+    
 
-    <a href="/teacher/teacher-dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
-    <a href="/teacher/teacher-exam"><i class="fas fa-book"></i><span>Manage Courses</span></a>
-    {% comment %} <a href="/teacher/teacher-question"><i class="fas fa-question-circle"></i><span>Manage Questions</span></a> {% endcomment %}
+    <a href="{%url 'teacher_course'%}"><i class="fas fa-tachometer-alt"></i><span>Courses</span></a>
+   {% comment %} <a href="teacher-exam"><i class="fas fa-book"></i><span>Manage Courses</span></a>
+     <a href="/teacher/teacher-question"><i class="fas fa-question-circle"></i><span>Manage Questions</span></a> {% endcomment %}
   </div>
   <!--sidebar end-->
 

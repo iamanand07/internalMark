@@ -1,5 +1,5 @@
-{% extends 'exam/adminbase.html' %}
-{% load widget_tweaks %}
+{% extends 'adminbase.html' %}
+{% comment %} {% load widget_tweaks %} {% endcomment %}
 {% block content %}
 <head>
   <style media="screen">
@@ -47,7 +47,8 @@
           {% render_field studentForm.mobile class="form-control" placeholder="Mobile" %}
             <label for="address">Address</label>
           {% render_field studentForm.address class="form-control" placeholder="Address" %}
-          
+          <label for="course">Enter Courses</label>
+          {% render_field userForm.course class="form-control" placeholder="course" %}
         <label for="username">Username</label>
         {% render_field userForm.username class="form-control" placeholder="Username" %}
           <label for="password">Password</label>

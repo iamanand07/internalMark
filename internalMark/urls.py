@@ -34,6 +34,12 @@ urlpatterns = [
     path('teacher_dashboard',views.StaffLogin,name='teacher_dashboard'),
     path('admin_dashboard',views.AdminLogin,name='admin_dashboard'),
     path('logout',views.UserLogout,name='logout'),
+    path('admin-view-course',views.admin_view_course,name='admin-view-course'),
+    path('admin-teacher',views.admin_teacher,name='admin-teacher'),
+    path('admin-student',views.admin_student,name='admin-student'),
+    path('add_course',views.submit_form,name='add_course'),
+    path('teacher_course',views.show_courses,name='teacher_course')
+    # path('teacher_dashboard',views.show_courses,name='teacher_dashboard'),
     
     
     
