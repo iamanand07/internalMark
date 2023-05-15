@@ -7,6 +7,9 @@ from .models import User,Student, Teacher, Course
 # Create your views here.
 
 def HomePage(request):
+    staff = Teacher.objects.filter(userid = '950033')
+    print(staff)
+
     return render(request,'home.html')
 def SignUpStaff(request):
     if request.method == 'POST':
@@ -138,11 +141,11 @@ def submit_form(request):
 
         # Insert form data into SQLite database
         course = Course.objects.create(course_code = course_code)
-        staff = Teacher.objects.filter(user_id = staff_id)
+        staff = Teacher.objects.get(userid = staff_id)
         course.course_name = course_name
         course.save()
-        current_user.teacher.add(course)
-        current_user.teacher.save()
+        staff.courses.add(course)
+        staff.save()
         messages.success(request, "Course added successfully")
         return render(request, 'add_course.html')
 
