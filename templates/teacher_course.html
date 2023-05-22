@@ -1,4 +1,4 @@
-{% extends 'teacherbase.html' %}
+
 
 {% block content %}
 
@@ -15,6 +15,9 @@
     <style type="text/css">
       a:link {
         text-decoration: none;
+      }
+      .container{
+        align:center;
       }
   
       .order-card {
@@ -68,16 +71,19 @@
     }
     </style>
   </head>
-<br><br>
+  {% include 'teacherbase.html' %}
+<br><br><br><br>
 
   <div class="container">
     <div class="row">
-        <ul>
+   
+        <ul >
 
             {% for course in courses %}
-                <li><a href="#">{{ course.course_code }} - {{ course.course_name }}</a></li>
+                <li><a href="{% url 'add_marks' %}">{{ course.course_code }} - {{ course.course_name }}</a></li>
             {% endfor %}
             </ul>
+        
         
     
 

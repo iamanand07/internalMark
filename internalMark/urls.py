@@ -38,7 +38,16 @@ urlpatterns = [
     path('admin-teacher',views.admin_teacher,name='admin-teacher'),
     path('admin-student',views.admin_student,name='admin-student'),
     path('add_course',views.submit_form,name='add_course'),
-    path('teacher_course',views.show_courses,name='teacher_course')
+    path('teacher_course',views.show_courses,name='teacher_course'),
+    path('add_marks',views.courseclick,name='add_marks'),
+    path('student_course',views.show_courses_student,name='student_course'),
+    path('aboutUs',views.aboutUs,name='aboutUs'),
+    path('admin_dashboard', views.admin_dashboard_view,name='admin_dashboard'),
+    path('enter_marks',views.enter_marks,name='enter_marks'),
+    path('student_marks',views.student_marks,name='student_marks'),
+    
+
+    
     # path('teacher_dashboard',views.show_courses,name='teacher_dashboard'),
     
     

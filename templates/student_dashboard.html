@@ -1,4 +1,4 @@
-{% extends 'studentbase.html' %}
+
 
 {% block content %}
 
@@ -66,37 +66,21 @@
       left: 0px;
       right: 0px;
     }
+    h3{
+      font-color: #663a30;
+    }
     </style>
   </head>
 <br><br>
 
+
   <div class="container">
     <div class="row">
-      
-  
-      <div class="col-md-4 col-xl-6">
-        <div class="card bg-c-blue order-card">
-          <div class="card-block">
-            <h6 class="m-b-20">Courses Taken</h6>
-           <h2 class="text-right"><i class="fas fa-book f-left"></i><span>{{total_course}}</span></h2>
-          </div>
-        </div>
-      </div>
-  
-      <div class="col-md-4 col-xl-6">
-        <div class="card bg-c-yellow order-card">
-          <div class="card-block">
-            <h6 class="m-b-20">Internal Question</h6>
-            <h2 class="text-right"><i class="fas fa-question-circle f-left"></i><span>{{total_question}}</span></h2>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+      {% include 'studentbase.html' %}
+      <br><br><br><br><br><br><br><br>
+      <h3>{{request.user.mobile}}</h3>
 
 
-<br><br><br><br><br><br><br><br><br><br>
 
 <script src="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 

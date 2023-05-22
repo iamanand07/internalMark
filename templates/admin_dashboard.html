@@ -1,10 +1,11 @@
-{% extends 'adminbase.html' %}
+
 {% block content %}
 
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
   
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -68,11 +69,12 @@
     </style>
   </head>
 <br><br>
-
+{% include 'adminbase.html' %}
+<br><br><br><br><br><br>
   <div class="container">
     <div class="row">
       <div class="col-md-4 col-xl-3">
-        <a href="admin-view-student" style="text-decoration: none;color:white;">
+        <a href="#" style="text-decoration: none;color:white;">
         <div class="card bg-c-pink order-card">
           <div class="card-block">
             <h6 class="m-b-20">Registered Students </h6>
@@ -84,7 +86,7 @@
       
   
       <div class="col-md-4 col-xl-3">
-        <a href="admin-view-teacher" style="text-decoration: none;color:white;">
+        <a href="#" style="text-decoration: none;color:white;">
         <div class="card bg-c-green order-card">
           <div class="card-block">
             <h6 class="m-b-20">Total Teachers </h6>
@@ -95,7 +97,7 @@
       </div>
   
       <div class="col-md-4 col-xl-3">
-        <a href="admin-view-course" style="text-decoration: none;color:white;">
+        <a href="#" style="text-decoration: none;color:white;">
         <div class="card bg-c-blue order-card">
           <div class="card-block">
             <h6 class="m-b-20">Total Courses</h6>

@@ -1,0 +1,154 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Marks</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<style>
+        html {
+        font-size: 16px;
+      }
+      body {
+        background-color: #1F2039;
+      }
+      section {
+        padding: 10px;
+      }
+      h1 {
+          font-size: 3rem;
+          color: #a5b4fc;
+          text-align: center;
+          margin-bottom: 50px;
+        }
+      form {
+       
+        flex-direction: column;
+        width: 50%;
+        margin: auto;
+        color: white;
+        margin-top:0%;
+        
+      }
+      .name-StaffID,course_id,coursename {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+      }
+      .name-StaffID,course_id,coursename div {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      label {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        margin-top: 20px;
+      }
+      input, textarea {
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+      }
+      input[type="submit"] {
+        width: 200px;
+        margin: auto;
+        margin-top: 20px;
+      }
+    
+      .cta:hover {
+        text-decoration: none;
+        background: linear-gradient(#696484, #8788BA);
+      }
+      @media screen and (max-width: 750px) {
+        form {
+          width: 100%;
+        }
+      }
+      
+      @media screen and (max-width: 530px) {
+        .name-email {
+          flex-direction: column;
+          gap: 0;
+        }
+      }
+        
+	</style>
+
+</head>
+<body>
+	{% include 'teacherbase.html' %}
+<br><br><br>
+        <div class="container" id="container">
+			{% block content %}
+
+			<form class="regform row g-3" id="dreg" method="POST" action="enter_marks" >
+				{%csrf_token%}
+				<h1 class="title">Add Marks</h1>
+
+
+				<form method="POST">
+          {% csrf_token %}
+          
+          <div class="col-md-1 form-group required">
+            <label class="form-label control-label" for="courseID">Enter Course ID:</label>
+            <input class="form-control" type="text" name="course_code" required />
+          </div>
+          <br>
+          
+          <div class="col-md-2 form-group required">
+            <label class="form-label control-label" for="studentID">Enter Student ID:</label>
+            <input class="form-control" type="text" name="student_id" required />
+          </div>
+          <br>
+          
+          <div class="col-md-3 form-group required">
+            <label class="form-label control-label" for="internalMark1">Enter Internal Mark 1:</label>
+            <input class="form-control" type="text" name="internal1" required />
+          </div>
+          <br>
+          
+          <div class="col-md-4 form-group required">
+            <label class="form-label control-label" for="attendance1">Enter Attendance 1:</label>
+            <input class="form-control" type="text" name="attendance1" required />
+          </div>
+          <br>
+          
+          <div class="col-md-5 form-group required">
+            <label class="form-label control-label" for="internalMark2">Enter Internal Mark 2:</label>
+            <input class="form-control" type="text" name="internal2" required />
+          </div>
+          <br>
+          
+          <div class="col-md-6 form-group required">
+            <label class="form-label control-label" for="attendance2">Enter Attendance 2:</label>
+            <input class="form-control" type="text" name="attendance2" required />
+          </div>
+          <br>
+          
+          <div class="col-md-7 form-group required">
+            <label class="form-label control-label" for="internalMark3">Enter Internal Mark 3:</label>
+            <input class="form-control" type="text" name="internal3" required />
+          </div>
+          <br>
+          
+          <div class="col-md-8 form-group required">
+            <label class="form-label control-label" for="attendance3">Enter Attendance 3:</label>
+            <input class="form-control" type="text" name="attendance3" required />
+          </div>
+          <br>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+			{% endblock %}
+		</div> 
+
+        </body>
+        </html>

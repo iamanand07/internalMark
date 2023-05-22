@@ -162,7 +162,7 @@
   <!--header area start-->
   <header>
     <label for="check">
-      <i style="left: 200px;margin-top: 17px;"class="fas fa-bars" id="sidebar_btn"></i>
+      <i style="left: 260px;margin-top: 11px;"class="fas fa-bars" id="sidebar_btn"></i>
     </label>
     <div class="left_area">
       <h3>Anna University</h3>
@@ -181,25 +181,21 @@
       <h6 style="color: rgb(255, 255, 255);">( Student )</h6>
 
     </center>
+    <ul>
 
-    <a href="student-dashboard"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a>
+      </ul>
+
+
+    {% comment %} <a href="{%url 'student_dashboard'%}"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a> {% endcomment %}
     {% comment %} <a href="student-exam"><i class="fas fa-book"></i><span>Examination</span></a> {% endcomment %}
-    <a href="student-marks"><i class="fas fa-sort-numeric-up"></i><span>My Marks</span></a>
+    <a href="student_course"><i class="fas fa-sort-numeric-up"></i><span>My Courses</span></a>
+    <a href="student_marks"><i class="fas fa-sort-numeric-up"></i><span>My Marks</span></a>  
   </div>
   <!--sidebar end-->
 
 
   <!--content start-->
-  <div class="content">
-    <br><br><br><br><br>
-    {% block content %}
-
-    {% endblock content %}
-
-
-    <br><br><br>
-    
-  </div>
+  
   <!--content end-->
 </body>
 

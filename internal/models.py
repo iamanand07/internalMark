@@ -16,7 +16,7 @@ class User(AbstractUser):
 
 class Course(models.Model): 
     course_name = models.CharField(max_length=60)
-    course_code = models.CharField(max_length=10, unique=True)
+    course_code = models.CharField(max_length=10,unique=True)
     
      
     def __str__(self):
@@ -60,7 +60,7 @@ class Mark(models.Model):
     attendance3 = models.IntegerField()
     
     def __str__(self):
-        return self.course
+        return self.student.name
 
     
      
