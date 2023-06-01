@@ -1,8 +1,4 @@
-
-
-{% block content %}
-
-
+{% load static %}
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -69,15 +65,23 @@
     h3{
       font-color: #663a30;
     }
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
     </style>
   </head>
-<br><br>
+
 
 
   <div class="container">
     <div class="row">
       {% include 'studentbase.html' %}
       <br><br><br><br><br><br><br><br>
+      <img src="{% static "assets/studentDashboard.jpg" %}" class ="center" alt="DASHBOARD" width="80%" 
+      height="70%">
       <h3>{{request.user.mobile}}</h3>
 
 
@@ -85,4 +89,4 @@
 <script src="http://netdna.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 
 
-{% endblock content %}
+

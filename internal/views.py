@@ -225,6 +225,10 @@ def student_marks(request):
     student = Student.objects.filter(userid = current_user.student.userid)
     mark = (Mark.objects.filter(student_id = current_user.student.user_id))
     
+    
+    
+    
+        
     return render(request, 'student_marks.html', {'student': student, 'marks': mark})
    
 
